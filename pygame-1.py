@@ -50,7 +50,7 @@ while loop:
     # affichage du score
     Message(str(Player1.score), (ecran_width / 20,
             ecran_height / 20), yellow).display(ecran)
-    Message("Hight: " + str(hight_score), (ecran_width - 150, ecran_height / 20), yellow).display(ecran)
+    Message("High: " + str(hight_score), (ecran_width - 150, ecran_height / 20), yellow).display(ecran)
 
     # gestion des évènements
     Player1.handle_events()
@@ -73,9 +73,9 @@ while loop:
                 
         if Player1.score > hight_score:
             hight_score = Player1.score
-            Message("New hight score: " + str(hight_score), (ecran_width / 4, ecran_height / 2.5), green).display(ecran)
+            Message("New high score: " + str(hight_score), (ecran_width / 4, ecran_height / 2.5), green).display(ecran)
         else: 
-            Message("Hight score: " + str(hight_score), (ecran_width / 3.3, ecran_height / 2.5), yellow).display(ecran)
+            Message("High score: " + str(hight_score), (ecran_width / 3.3, ecran_height / 2.5), yellow).display(ecran)
 
         Player1.reset()
 
